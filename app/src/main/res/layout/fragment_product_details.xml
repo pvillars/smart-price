@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/nameProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/last_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameProduct"
+            android:layout_margin="8dp"
+            android:text="Última Actualización:"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lastUpdateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameProduct"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/last_update"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/lastUpdateHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastUpdateDate"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/last_update"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

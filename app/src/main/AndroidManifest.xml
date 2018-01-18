@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cl.anpetrus.smartprice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.login.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.ActionBar"></activity>
+        <activity
+            android:name=".views.main.MainActivity"
+            android:configChanges="keyboard|screenSize|orientation"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".views.products.add.NewProductActivity"
+            android:configChanges="keyboard|screenSize|orientation"
+            android:label="@string/title_activity_new_product" />
+        <activity
+            android:name=".views.products.details.ProductActivity"
+            android:configChanges="keyboard|screenSize|orientation"
+            android:label="@string/title_activity_product"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".views.image.ImageActivity"
+            android:configChanges="keyboard|screenSize|orientation"
+            android:theme="@style/AppTheme.ActionBar" />
+        <activity
+            android:name=".views.splash.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.ActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.explainer.ExplainerActivity"></activity>
+        <meta-data
+            tools:replace="android:value"
+            android:name="io.fabric.ApiKey"
+            android:value="@string/fabric_key" />
+    </application>
+
+
+</manifest>
